@@ -1,0 +1,5 @@
+export const TITLE="title"
+export const IMAGE="image"
+export const PRICE="price"
+export const DESCRIPTION="description"
+export const CATEGORY="category"

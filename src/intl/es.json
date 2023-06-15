@@ -1,0 +1,20 @@
+{
+  "ok": "Ok",
+  "login.userName": "Usuario",
+  "login.password": "Contraseña",
+  "login.userPlaceholder": "Escribe tu usuario",
+  "login.passPlaceholder": "Digita tu contraseña",
+  "modal.confirmSubtitle": "Guardar información",
+  "modal.confirmTitle": "Estas seguro de guardar?",
+  "modal.okText": "Continuar",
+  "modal.cancelText": "Cancelar",
+  
+  "requiredInput": "Campo obligatorio",
+  "onlyNumbers": "Solo números",
+
+  "product.title": "Titulo",
+  "product.price": "Precio",
+  "product.description": "Descripción",
+  "product.category": "Categoría",
+  "product.image": "Imagen"
+}
