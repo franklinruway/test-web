@@ -44,12 +44,12 @@ const Login: React.FC = () => {
     return (
         <div className={styles.classes.root}>
             <Grid container spacing={2} alignItems={"center"}>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                     <Box component='div'>
-                        <img src="https://notife.com/wp-content/uploads/2019/05/everest-getty-1.jpg" alt="logo" style={{ width: "80%", float: "right" }} />
+                        <img src="https://img.wallpapersafari.com/desktop/1680/1050/70/10/VQWxKr.jpg" alt="logo" className={styles.classes.image}/>
                     </Box>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                     <Box
                         component="form"
                         sx={{
@@ -58,7 +58,7 @@ const Login: React.FC = () => {
                         noValidate
                         autoComplete="off"
                         onSubmit={handleSubmit((data) => handleSubmitForm(data))}
-                        style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "flex-start" }}
+                        style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}
                     >
                         <div style={{ textAlign: "center" }} >
                             <img src="https://ruway.tech/static/media/logo.0daae2dc.png" alt="logo" style={{ width: "50%" }} />
@@ -107,7 +107,7 @@ const Login: React.FC = () => {
                                         helperText={errors[userConstants.PASSWORD]?.message}
                                         sx={{ width: '100%' }}
                                     />
-                                    <Button type="button" variant="text" style={{ position: 'absolute', top: '50%', right: '10px', transform: 'translateY(-50%)' }} onClick={() => setShowPassword(!showPassword)} >
+                                    <Button type="button" variant="text" style={{ position: 'absolute', top: 25, right: '10px', transform: 'translateY(-50%)' }} onClick={() => setShowPassword(!showPassword)} >
                                         {showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
                                     </Button>
                                 </div>
@@ -118,12 +118,13 @@ const Login: React.FC = () => {
                             Iniciar sesion
                         </Button>
                         <br />
-                    </Box>
-                    {token}
-                    <Typography variant="h3" component="p">
+                        <Typography variant="h3" component="p">
                         Usuario: johnd<br />
                         Contraseña: m38rmF$
                     </Typography>
+                    </Box>
+                    {token}
+                    
                 </Grid>
             </Grid>
         </div>

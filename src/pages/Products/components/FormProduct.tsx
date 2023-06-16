@@ -44,7 +44,7 @@ const FormProduct: React.FC<Props> = ({ handleSubmitProduct, isLoading: isLoadin
         <Box
             component="form"
             sx={{
-                '& .MuiTextField-root': { m: 1, width: '50ch' },
+                '& .MuiTextField-root': { marginY: 1, width: '100%' },
             }}
             noValidate
             autoComplete="off"
@@ -96,7 +96,7 @@ const FormProduct: React.FC<Props> = ({ handleSubmitProduct, isLoading: isLoadin
                         render={({ field }) => (
                             <FormControl
                                 {...field}
-                                sx={{ m: 1, minWidth: 120, width: '25ch' }}
+                                sx={{width: '50%' }}
                                 error={Boolean(errors[productConstants.CATEGORY])}
                             >
                                 <InputLabel id="demo-simple-select-label">{localize('product.category')}</InputLabel>
@@ -125,9 +125,6 @@ const FormProduct: React.FC<Props> = ({ handleSubmitProduct, isLoading: isLoadin
                         }
                         render={({ field }) => (
                             <TextField
-                                style={{
-                                    width: '23ch'
-                                }}
                                 {...field}
                                 id={productConstants.PRICE}
                                 label={localize('product.price')}

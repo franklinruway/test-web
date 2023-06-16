@@ -60,18 +60,18 @@ const ProductDetail: React.FC = () => {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2} margin={4}>
+            <Grid container rowSpacing={2} margin={4}>
                 <Grid xs={12}>
                     <Button variant="contained" color="success" href="/products"> <ArrowBackIcon /> Regresar</Button>
                     <Item elevation={3} sx={{ p: 2, mt: 2 }}>
                         {isLoading && <p>Loading...</p>}
                         {!isLoading &&
-                            <Grid container spacing={2} margin={2}>
-                                <Grid xs={6}>
-                                    <img src={data.image} alt="" style={{ width: "50%", maxWidth: 300 }} />
+                            <Grid container rowSpacing={2} margin={2}>
+                                <Grid xs={12} md={6}>
+                                    <img src={data.image} alt="" style={{ width: "50%", maxWidth: 250 }} />
                                 </Grid>
-                                <Grid xs={6}>
-                                    <Card sx={{ maxWidth: '100%', minWidth: 300 }}>
+                                <Grid xs={12} md={6}>
+                                    <Card sx={{ maxWidth: '100%', minWidth: 250 }}>
                                         <CardActions disableSpacing>
                                             <Button size="small" variant="contained" color="info" href={`/updateProduct/${data.id}`}><EditIcon /> Editar</Button>
                                             <Button size="small" variant="contained" color="error" onClick={() => handleClickDelete(data.id)} disabled={deleteProductIsLoading}><DeleteIcon /> Eliminar</Button>
@@ -93,7 +93,7 @@ const ProductDetail: React.FC = () => {
                                     </Card>
                                 </Grid>
                                 <Grid xs={12}>
-                                    <Card sx={{ maxWidth: '100%', minWidth: 300 }} >
+                                    <Card sx={{ maxWidth: '100%', minWidth: 250 }} >
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="div">
                                                 Description
