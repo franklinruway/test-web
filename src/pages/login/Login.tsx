@@ -46,7 +46,7 @@ const Login: React.FC = () => {
             <Grid container spacing={2} alignItems={"center"}>
                 <Grid item xs={12} md={6}>
                     <Box component='div'>
-                        <img src="https://img.wallpapersafari.com/desktop/1680/1050/70/10/VQWxKr.jpg" alt="logo" className={styles.classes.image}/>
+                        <img src="https://aydai.com/wp-content/uploads/2020/11/tienda-online-ERP-ventas.jpg" alt="logo" className={styles.classes.image}/>
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={6}>
